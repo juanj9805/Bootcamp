@@ -49,13 +49,18 @@ body.dark{
     height: 100%;
     width: 250px;
     padding: 10px 14px ;
-    background: var(--sidebar-color);
+     /* background: var(--sidebar-color); */
     transition: var(--tran-05);
     z-index: 100;
+    background-color: #9999AA;
 }
+
+
 
 .sidebar.close{
     width: 88px;
+
+
 
 }
 
@@ -84,11 +89,20 @@ body.dark{
     font-size: 20px;
 }
 
+
 .sidebar .text, 
 .sidebar .icon {
-    color: var(--text-color);
+    color: #373737;
+    /* color: var(--text-color); */
     transition: var(--tran-03);
 }
+/* EFB810 */
+
+body.dark .sidebar .text, 
+.sidebar .icon {
+    color:#EFB810 ;
+}
+
 
 .sidebar .text {
     font-size: 17px;
@@ -115,6 +129,8 @@ body.dark{
     font-size: 16px;
     font-weight: 600;
 }
+
+
 
 .profe{
     font-size: 16px;
@@ -205,7 +221,9 @@ body.dark .sidebar header .toggle{
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
     color: var(--sidebar-color);
-    /* color: #18191A; */
+
+    
+    /* color: #18191A; */   
 }
 
 
@@ -220,7 +238,7 @@ body.dark .sidebar li a:hover .text {
     height: calc(100% - 55px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     overflow-y: scroll;
 }
 
@@ -341,7 +359,84 @@ body{
 
 
 .parte__derecha{
-    border: solid 3px #9C27B0;
-    position: absolute;
+/*     border: solid 3px #9C27B0;
+ */    position: absolute;
     right: 1px;
+}
+
+
+body.dark .parte__derecha{
+    color: white; 
+}
+
+    .img__header{
+        width: 100%;
+        position: relative;
+        background-image: linear-gradient(to right, rgba(24, 0, 110, 0), rgba(255, 255, 255, 1)), url('tu-imagen.jpg');
+        background-size: 100%, cover; 
+        background-position: left, center;
+
+    }
+        .img__header img{
+            width: 100%;
+/*             position: absolute;
+
+ */
+        }        
+        .img__header h1 {
+            position: absolute;
+            top: 20%;
+            left: 6%;
+            color: white;
+        }  
+        .img__header p {
+            position: absolute;
+            top: 40%;
+            left: 6%;
+            color: white;
+        }  
+
+
+nav .sidebar{
+    background-color: #D9D9D9;
+}
+
+.logo__bt{
+    width: 50%;
+
+}
+
+.header__bt{
+    flex-grow: wrap;
+
+}
+
+.logo__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Opcional: para centrar verticalmente */
+    text-align: center; /* Opcional: para centrar el texto horizontalmente */
+    column-count: 2; /* Divide el contenido en 2 columnas */
+    column-gap: 10px; /* Espacio entre las columnas */
+}
+
+/* nav.dark {
+    color: #9C27B0;
+}
+ */
+
+ body.dark .name{
+    color: #EFB810;
+}   
+
+body.dark .sidebar{
+    background-color: #282828;
+}
+
+body.dark .icon{
+    color: #EFB810;
+   
+}
+.icon{
+    color: rgb(60,60,60)!important;
 }
