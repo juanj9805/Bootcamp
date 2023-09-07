@@ -1,4 +1,4 @@
-alert("holamundo")
+
 
 const body = document.querySelector('body'),
     sidebar = body.querySelector('nav'),
@@ -29,3 +29,31 @@ modeSwitch.addEventListener('click', ()=>{
     }
 
 })
+
+//desarrollo bootcamp
+
+//Declarar variables
+
+let menuHamburguesa = document.getElementById("menuHamburguesa")
+let parteDerecha = document.getElementById("parteDerecha")
+let estadoBoton = 0;
+
+menuHamburguesa.addEventListener("click", function(){
+/*     alert("hola compas");
+ */    estadoBoton++; // Incrementa el estado en 1 (cambia de par a impar o viceversa)
+    actualizarEstado();
+});
+
+function actualizarEstado() {
+    if (estadoBoton % 2 === 0) {
+        parteDerecha.style.width="92%";
+
+        // Realiza acciones correspondientes al estado par
+    } else {
+        parteDerecha.style.width="77.5%";
+
+        // Realiza acciones correspondientes al estado impar
+    }
+}
+
+

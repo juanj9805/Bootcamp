@@ -43,7 +43,7 @@ body.dark{
 
 .sidebar{
     position: fixed;
-    border: red solid 3px;
+    /* border:  solid 3px #282828; */
     top: 0;
     left: 0;
     height: 100%;
@@ -322,4 +322,26 @@ body.dark .switch::before {
 
 body.dark .home .text {
     color: var(--text-color);
+}
+
+
+
+
+/* //BOTCAMP HOY 
+ */
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+
+.parte__derecha{
+    border: solid 3px #9C27B0;
+    position: absolute;
+    right: 1px;
 }
