@@ -43,6 +43,7 @@ body.dark{
 
 .sidebar{
     position: fixed;
+    border-radius: 20px;
     /* border:  solid 3px #282828; */
     top: 0;
     left: 0;
@@ -126,8 +127,9 @@ body.dark .sidebar .text,
 
 .name{
     margin-top: 2px;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 600;
+    color: #002C6A;
 }
 
 
@@ -156,7 +158,7 @@ body.dark .sidebar .text,
     right: 0px;
     height: 35px;
     width: 35px;
-    background-color: var(--primary-color);
+    
     color: var(--sidebar-color);
     /* color: #18191A; */
     display: flex;
@@ -215,13 +217,12 @@ body.dark .sidebar header .toggle{
 }
 
 .sidebar li a:hover {
-    background-color: var(--primary-color);
+background-color: white;
 }
 
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
-    color: var(--sidebar-color);
-
+color: #5A61BD;
     
     /* color: #18191A; */   
 }
@@ -382,18 +383,21 @@ body.dark .parte__derecha{
 /*             position: absolute;
 
  */
-        }        
+        }  
+              
         .img__header h1 {
             position: absolute;
-            top: 20%;
+            top: 30%;
             left: 6%;
             color: white;
+            font-size: 35px;
         }  
         .img__header p {
             position: absolute;
-            top: 40%;
+            top: 60%;
             left: 6%;
             color: white;
+            font-size: 20px;
         }  
 
 
@@ -440,3 +444,90 @@ body.dark .icon{
 .icon{
     color: rgb(60,60,60)!important;
 }
+
+.formulario__bt{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.agregar{
+    margin-top: 10px;
+    width: 180px;
+    height: 58px;
+    background-color: #5A61BD;  
+    border-radius: 20px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.474px; /* 137.37% */
+
+}
+
+body.dark .agregar{
+    background-color: #EFB810;  
+
+}
+
+.buscar{
+    width: 90px;
+    height: 58px;
+    background-color: #5A61BD;
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.474px; /* 137.37% */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body.dark .buscar{  
+    background-color: #EFB810;
+
+}
+
+.cont__agregar{
+    display: flex;
+    justify-content: flex-end;
+}
+.cont__buscar{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+
+}
+
+
+
+.buscar_Id{
+    width: 70%;
+    border-radius:  20px;
+    padding-left: 5%;
+    background-color: #A8A8A8;
+    color: white;
+}
+
+body.dark .buscar_Id{
+    width: 70%;
+    border-radius:  20px;
+    padding-left: 5%;
+    background-color: #A8A8A8;
+    color: white;
+}
+
+.contenedor__formulario{
+    border-radius: 20px 0 0 0;
+    background-color: #D9D9D9;
+    height: 68vh;
+}
+
+ body.dark .contenedor__formulario{
+    background-color: #282828;
+ }
